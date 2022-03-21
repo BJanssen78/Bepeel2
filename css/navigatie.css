@@ -53,9 +53,9 @@
     }
     .sub-nav-droplist{
         position: absolute;
-        /* display: none; */
+        display: none;
         text-align: left;
-        width: 150px;
+        width: 220px;
         padding: 5px 0;
         background-color: yellow;
         color: black;
@@ -76,5 +76,8 @@
     }
     .sub-nav-link:hover{
         background-color: black;
+    }
+    .navi-span-highlight{
+        color: red;
     }
 }
