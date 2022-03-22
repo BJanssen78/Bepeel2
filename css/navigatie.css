@@ -10,10 +10,9 @@
         background-color: yellow;
         color: black;
         text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        /* justify-items: center; */
+        display: inline;
+        /* flex-direction: row; */
+        /* justify-content: center; */
     }
     .navi-list{
         display: inline;
@@ -38,25 +37,17 @@
         display: inline;
         padding: 10px;
     }
-    .navi-list-item:hover  .navi-link:hover  .button-div:hover .sub-nav-link:hover
-    .dropdown-button:hover{
-        color: yellow;
-        background-color: black;
-    }
+
     #dropdown{
         display: inline-block;
         position: relative;
-    }
-    #dropdown:hover{
-        background-color: black;
-        color: yellow;
     }
     .sub-nav-droplist{
         position: absolute;
         display: none;
         text-align: left;
         width: 220px;
-        padding: 5px 0;
+        padding: 10px 0;
         background-color: yellow;
         color: black;
         z-index: 1;
@@ -67,15 +58,14 @@
         font-weight: bold;
         line-height: 1em;
     }
-    .sub-nav-droplist:hover a:hover{
+    .sub-nav-droplist:hover a:hover .dropdown-button:hover{
         background-color: black;
         color: yellow;
+        
     }
     #dropdown:hover .sub-nav-droplist{
         display: block;
-    }
-    .sub-nav-link:hover{
-        background-color: black;
+        transition: 3000ms ease-in-out;
     }
     .navi-span-highlight{
         color: red;

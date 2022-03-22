@@ -13,12 +13,15 @@ body > *{
         display: grid;
         /* grid-gap: 3px; */
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: 150px 53px auto 150px;
+        grid-template-rows: 180px 40px auto 150px;
         grid-template-areas:
         "h h h h h h h h h h h h"
         "m m m m m m m m m m m m"
         "l l l c c c c c c c r r"
         "f f f f f f f f f f f f" ;
+}
+body{
+    margin: 0;
 }
 .header{
     grid-area: h;
